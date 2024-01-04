@@ -1,5 +1,4 @@
 #!/bin/python
-#!/bin/python
 import requests
 import random
 
@@ -29,11 +28,11 @@ if __name__ == "__main__":
 
     try:
         default_group_size = int(input("Enter the number of words per group (default is 4): ") or 4)
-        num_groups = 20
+        num_groups = 10
     except ValueError:
         print("Invalid input. Using the default group size, which is 4.")
         default_group_size = 4
-        num_groups = 20
+        num_groups = 10
 
     print(f"\nDisplaying {num_groups} groups of words, each group containing {default_group_size} words containing the letters 'ertyuiopsdfghjkl':")
     display_word_groups(words, default_group_size, num_groups)
